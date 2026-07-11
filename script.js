@@ -1,167 +1,77 @@
-/* ============================================
-   Farmer Crop Monitoring System - Main JS
-   Keep it simple: mobile nav toggle + basic
-   client-side form validation for auth pages.
-   ============================================ */
+// AgriMonitor — About Us interactions
 
-// ---------- Mobile nav toggle ----------
-function initNavToggle() {
-  const toggleBtn = document.getElementById("navToggle");
-  const header = document.getElementById("siteHeader");
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const mainNav = document.getElementById('mainNav');
+  const header = document.getElementById('siteHeader');
+  const scrollBtn = document.getElementById('scrollBtn');
+  const featureTrack = document.getElementById('featureTrack');
 
-  if (!toggleBtn || !header) return;
-
-  toggleBtn.addEventListener("click", () => {
-    header.classList.toggle("open");
-  });
-}
-
-// ---------- Helper: show/hide field error ----------
-function setFieldError(inputEl, errorEl, message) {
-  if (message) {
-    errorEl.textContent = message;
-    errorEl.style.display = "block";
-    inputEl.style.borderColor = "#c0392b";
-    return false;
-  }
-  errorEl.style.display = "none";
-  inputEl.style.borderColor = "#dfe6e0";
-  return true;
-}
-
-function isValidEmail(value) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-}
-
-// ---------- Login form ----------
-function initLoginForm() {
-  const form = document.getElementById("loginForm");
-  if (!form) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const email = document.getElementById("email");
-    const password = document.getElementById("password");
-    let valid = true;
-
-    valid = setFieldError(
-      email,
-      document.getElementById("emailError"),
-      email.value.trim() === "" || !isValidEmail(email.value)
-        ? "Enter a valid email address"
-        : ""
-    ) && valid;
-
-    valid = setFieldError(
-      password,
-      document.getElementById("passwordError"),
-      password.value.trim() === "" ? "Password is required" : ""
-    ) && valid;
-
-    if (!valid) return;
-
-    // TODO: replace with real API call to the backend auth service
-    console.log("Login submitted:", { email: email.value });
-    alert("Login successful! (demo only - connect this to your backend API)");
-  });
-}
-
-// ---------- Farmer registration form ----------
-function initRegisterForm() {
-  const form = document.getElementById("registerForm");
-  if (!form) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const fullName = document.getElementById("fullName");
-    const email = document.getElementById("email");
-    const phone = document.getElementById("phone");
-    const password = document.getElementById("password");
-    const confirmPassword = document.getElementById("confirmPassword");
-    const terms = document.getElementById("terms");
-
-    let valid = true;
-
-    valid = setFieldError(
-      fullName,
-      document.getElementById("fullNameError"),
-      fullName.value.trim() === "" ? "Full name is required" : ""
-    ) && valid;
-
-    valid = setFieldError(
-      email,
-      document.getElementById("emailError"),
-      !isValidEmail(email.value) ? "Enter a valid email address" : ""
-    ) && valid;
-
-    valid = setFieldError(
-      phone,
-      document.getElementById("phoneError"),
-      !/^\d{10}$/.test(phone.value.trim()) ? "Enter a valid 10-digit phone number" : ""
-    ) && valid;
-
-    valid = setFieldError(
-      password,
-      document.getElementById("passwordError"),
-      password.value.length < 6 ? "Password must be at least 6 characters" : ""
-    ) && valid;
-
-    valid = setFieldError(
-      confirmPassword,
-      document.getElementById("confirmPasswordError"),
-      confirmPassword.value !== password.value ? "Passwords do not match" : ""
-    ) && valid;
-
-    if (!terms.checked) {
-      document.getElementById("termsError").style.display = "block";
-      valid = false;
-    } else {
-      document.getElementById("termsError").style.display = "none";
-    }
-
-    if (!valid) return;
-
-    // TODO: replace with real API call to the backend registration service
-    console.log("Farmer registration submitted:", {
-      fullName: fullName.value,
-      email: email.value,
-      phone: phone.value,
+  // Mobile nav toggle
+  if (hamburger && mainNav) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
-    alert("Registration successful! (demo only - connect this to your backend API)");
-  });
-}
 
-// ---------- Forgot password form ----------
-function initForgotPasswordForm() {
-  const form = document.getElementById("forgotForm");
-  if (!form) return;
+    // Close nav when a link is clicked (mobile)
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  // Header shadow on scroll
+  const applyHeaderShadow = () => {
+    if (window.scrollY > 8) {
+      header.style.boxShadow = '0 4px 18px rgba(0,0,0,0.08)';
+    } else {
+      header.style.boxShadow = 'none';
+    }
+  };
+  applyHeaderShadow();
+  window.addEventListener('scroll', applyHeaderShadow, { passive: true });
 
-    const email = document.getElementById("email");
-    const valid = setFieldError(
-      email,
-      document.getElementById("emailError"),
-      !isValidEmail(email.value) ? "Enter a valid email address" : ""
-    );
+  // Feature strip: right-arrow scroll button (mobile)
+  if (scrollBtn && featureTrack) {
+    scrollBtn.addEventListener('click', () => {
+      featureTrack.scrollBy({ left: 190, behavior: 'smooth' });
+    });
 
-    if (!valid) return;
+    const updateScrollBtnVisibility = () => {
+      const atEnd = featureTrack.scrollLeft + featureTrack.clientWidth >= featureTrack.scrollWidth - 8;
+      scrollBtn.style.opacity = atEnd ? '0' : '1';
+      scrollBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+    };
+    featureTrack.addEventListener('scroll', updateScrollBtnVisibility, { passive: true });
+    window.addEventListener('resize', updateScrollBtnVisibility);
+    updateScrollBtnVisibility();
+  }
 
-    // TODO: replace with real API call that triggers the reset email
-    console.log("Password reset requested for:", email.value);
-
-    document.getElementById("successMessage").style.display = "block";
-    form.reset();
-  });
-}
-
-// ---------- Init on page load ----------
-document.addEventListener("DOMContentLoaded", () => {
-  initNavToggle();
-  initLoginForm();
-  initRegisterForm();
-  initForgotPasswordForm();
+  // Active nav link highlight based on scroll position
+  const sections = document.querySelectorAll('main section[id]');
+  const navLinks = document.querySelectorAll('.main-nav a');
+  if (sections.length && navLinks.length) {
+    const onScrollSpy = () => {
+      let currentId = '';
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 120 && rect.bottom > 120) {
+          currentId = section.id;
+        }
+      });
+      if (currentId) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+        });
+      }
+    };
+    window.addEventListener('scroll', onScrollSpy, { passive: true });
+  }
 });
