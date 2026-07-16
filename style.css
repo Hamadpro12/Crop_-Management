@@ -409,6 +409,82 @@ p{ margin:0; color: var(--ink-soft); }
 }
 
 /* =========================================================
+   FEATURES PAGE
+   ========================================================= */
+.features-hero{
+  background: var(--cream);
+  padding: 84px 0 64px;
+  text-align: center;
+}
+.features-title{
+  font-size: clamp(30px, 5vw, var(--h1));
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+.features-title span{ color: var(--green); }
+.features-subtitle{
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: var(--ink-soft);
+}
+
+.features-grid-section{ padding: 70px 0 90px; background: var(--white); }
+.features-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+.feature-tile{
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  border: 1px solid rgba(163,183,167,0.3);
+}
+.feature-tile:hover{
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
+}
+.tile-top{
+  display:flex;
+  align-items:flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.tile-icon{
+  flex-shrink:0;
+  width: 46px; height:46px;
+  border-radius:50%;
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+  display:flex; align-items:center; justify-content:center;
+}
+.tile-icon svg{ width:22px; height:22px; }
+.tile-art{
+  flex: 1;
+  border-radius: var(--radius-sm);
+  overflow:hidden;
+  line-height:0;
+}
+.tile-art-svg{ width:100%; height:auto; display:block; }
+.feature-tile h4{ font-size:17px; margin-bottom:8px; }
+.feature-tile p{ font-size:14px; }
+
+@media (max-width: 1100px){
+  .features-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px){
+  .features-hero{ padding: 56px 0 48px; }
+}
+@media (max-width: 560px){
+  .features-grid{ grid-template-columns: 1fr; gap:18px; }
+  .feature-tile{ padding:20px; }
+  .tile-top{ flex-direction:column; }
+  .tile-icon{ width:40px; height:40px; }
+}
+
+/* =========================================================
    AUTH PAGES (Login / Register)
    ========================================================= */
 .auth-section{
