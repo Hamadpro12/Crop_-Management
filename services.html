@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | AgriMonitor - Smart Farming, Better Tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2C17 2 8 6 8 16C8 22.6274 12.3726 27 17 27C21.6274 27 26 22.6274 26 16C26 6 17 2 17 2Z" fill="#036832"/>
+        <path d="M17 27V32" stroke="#702D1B" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M12 30C13.5 28.5 15 28 17 28C19 28 20.5 28.5 22 30" stroke="#702D1B" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">AgriMonitor</span>
+        <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="#">Crop Monitoring</a>
+      <a href="#">Weather</a>
+      <a href="#">Report</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="register.html" class="btn btn-solid">Register</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== SERVICES HERO ===== -->
+<section class="services-hero">
+  <div class="container services-hero-grid">
+    <div class="services-hero-text">
+      <h1 class="services-title">Smart <span>Agriculture</span> Services</h1>
+      <p class="services-subtitle">
+        Empowering farmers with intelligent solutions for crop monitoring, irrigation,
+        weather forecasting, pest management, and farm analytics.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn btn-solid btn-lg">Explore Services</button>
+        <button class="btn btn-outline btn-lg">Contact Experts</button>
+      </div>
+    </div>
+    <div class="services-hero-art" aria-hidden="true">
+      <svg viewBox="0 0 320 260" class="hero-art-svg">
+        <ellipse cx="170" cy="220" rx="130" ry="18" fill="#dfe6df"/>
+        <path d="M70 210c-14-40-6-80 30-96 30-14 66-4 78 24 10 24 2 50-16 66-8 30-40 40-70 30-16-6-18-14-22-24z" fill="#B49D97"/>
+        <path d="M70 210c-14-40-6-80 30-96" stroke="#8a6f66" stroke-width="2" fill="none" opacity=".4"/>
+        <circle cx="95" cy="150" r="6" fill="#e8d9a0"/>
+        <circle cx="112" cy="168" r="6" fill="#e8d9a0"/>
+        <circle cx="88" cy="180" r="6" fill="#e8d9a0"/>
+        <circle cx="120" cy="146" r="6" fill="#e8d9a0"/>
+        <circle cx="132" cy="176" r="6" fill="#e8d9a0"/>
+        <g transform="translate(150,90)">
+          <path d="M0 90V40" stroke="#3f8f5c" stroke-width="4" stroke-linecap="round"/>
+          <path d="M0 60c-16-6-24-22-20-38 16 2 26 14 28 30" fill="#5fa176"/>
+          <path d="M0 46c14-8 20-24 14-40-16 4-24 18-22 34" fill="#036832"/>
+          <circle cx="0" cy="30" r="10" fill="#036832"/>
+        </g>
+        <g transform="translate(210,110)">
+          <path d="M0 70V30" stroke="#3f8f5c" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M0 46c-12-5-18-17-15-29 12 2 20 11 21 23" fill="#5fa176"/>
+          <path d="M0 34c11-6 15-18 11-30-12 3-18 14-17 26" fill="#036832"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES INTRO ===== -->
+<section class="services-intro">
+  <div class="container">
+    <h2 class="section-title center">Our Smart <span>Farming</span> Services</h2>
+    <p class="services-intro-text">
+      Explore our advanced agriculture services designed to improve farm productivity
+      and simplify daily farming operations.
+    </p>
+  </div>
+</section>
+
+<!-- ===== SERVICES LIST ===== -->
+<section class="services-list">
+  <div class="container">
+
+    <!-- 1. Crop Monitoring -->
+    <div class="service-row">
+      <div class="service-card">
+        <h3>Crop Monitoring</h3>
+        <p>Monitor crop growth, health, and life cycle in real time using smart technology.</p>
+        <ul class="service-checklist">
+          <li>Real-Time crop health tracking</li>
+          <li>AI-based disease detection</li>
+          <li>Timely recommendations</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--crop">
+        <div class="service-widget">
+          <span class="widget-label">Crop Health</span>
+          <span class="widget-badge widget-badge--good"><svg viewBox="0 0 24 24" width="12" height="12"><circle cx="12" cy="12" r="10" fill="#036832"/></svg> Good</span>
+          <svg class="widget-sparkline" viewBox="0 0 100 32"><polyline points="0,26 15,20 30,22 45,10 60,14 75,6 100,8" fill="none" stroke="#036832" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Weather Forecasting -->
+    <div class="service-row service-row--reverse">
+      <div class="service-card">
+        <h3>Weather Forecasting</h3>
+        <p>Receive accurate weather updates, rainfall alerts, and climate insights for better planning.</p>
+        <ul class="service-checklist">
+          <li>Real-Time weather updates</li>
+          <li>Rainfall &amp; temperature alerts</li>
+          <li>7 day &amp; 15 day forecasts</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--weather">
+        <div class="service-widget widget--forecast">
+          <span class="widget-label">Weather Forecast</span>
+          <div class="forecast-rows">
+            <div class="forecast-row"><span>Today</span><span>☀️</span><span>28°C</span></div>
+            <div class="forecast-row"><span>Tomorrow</span><span>⛅</span><span>26°C</span></div>
+            <div class="forecast-row"><span>Wed</span><span>🌦️</span><span>24°C</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Smart Irrigation -->
+    <div class="service-row">
+      <div class="service-card">
+        <h3>Smart Irrigation</h3>
+        <p>Optimize irrigation schedules using soil moisture and weather data to save water.</p>
+        <ul class="service-checklist">
+          <li>Automated irrigation scheduling</li>
+          <li>Water usage optimization</li>
+          <li>Save water &amp; reduce cost</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--irrigation">
+        <div class="service-widget widget--irrigation">
+          <span class="widget-label">Irrigation Schedule</span>
+          <div class="irrigation-row"><span>Zone 1</span><span class="toggle toggle--on"></span></div>
+          <div class="irrigation-row"><span>Zone 2</span><span class="toggle toggle--on"></span></div>
+          <div class="irrigation-row"><span>Zone 3</span><span class="toggle"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Soil Monitoring -->
+    <div class="service-row service-row--reverse">
+      <div class="service-card">
+        <h3>Soil Monitoring</h3>
+        <p>Track soil moisture, temperature, pH, and nutrients to maintain healthy soil.</p>
+        <ul class="service-checklist">
+          <li>Soil nutrient analysis</li>
+          <li>pH and moisture monitoring</li>
+          <li>Fertilizer recommendation</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--soil">
+        <div class="service-widget widget--soil">
+          <span class="widget-label">Soil Analysis</span>
+          <div class="soil-row"><span>pH Level</span><span>6.8</span><em class="tag tag--good">Good</em></div>
+          <div class="soil-row"><span>Moisture</span><span>42%</span><em class="tag tag--medium">Medium</em></div>
+          <div class="soil-row"><span>Nitrogen</span><span>High</span><em class="tag tag--good">Good</em></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Pest & Disease Detection -->
+    <div class="service-row">
+      <div class="service-card">
+        <h3>Pest &amp; Disease Detection</h3>
+        <p>Identify pests and crop diseases early and receive treatment recommendations.</p>
+        <ul class="service-checklist">
+          <li>Early pest detection</li>
+          <li>Treatment recommendations</li>
+          <li>Reduce crop loss</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--pest">
+        <div class="service-widget widget--pest">
+          <span class="widget-label">Leaf Scan</span>
+          <span class="widget-badge widget-badge--warn">⚠ 2 Issues Found</span>
+          <p class="widget-note">Early blight detected on 2 leaves — treatment advised.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Reports & Analytics -->
+    <div class="service-row service-row--reverse">
+      <div class="service-card">
+        <h3>Reports &amp; Analytics</h3>
+        <p>Generate detailed reports and analyze farm performance to make informed decisions.</p>
+        <ul class="service-checklist">
+          <li>Yield performance reports</li>
+          <li>Farm activity analytics</li>
+          <li>Smart decision support</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--reports">
+        <div class="service-widget widget--reports">
+          <span class="widget-label">This Month Overview</span>
+          <svg class="widget-bars" viewBox="0 0 100 40"><rect x="4" y="18" width="10" height="22" rx="2" fill="#a9c9ac"/><rect x="22" y="10" width="10" height="30" rx="2" fill="#5fa176"/><rect x="40" y="4" width="10" height="36" rx="2" fill="#036832"/><rect x="58" y="14" width="10" height="26" rx="2" fill="#5fa176"/><rect x="76" y="8" width="10" height="32" rx="2" fill="#036832"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Expert Advisor Alerts -->
+    <div class="service-row">
+      <div class="service-card">
+        <h3>Expert Advisor Alerts</h3>
+        <p>Receive expert advice and real-time alerts on crop and pest diseases.</p>
+        <ul class="service-checklist">
+          <li>Expert consultation</li>
+          <li>Pest &amp; disease alerts</li>
+          <li>Best practice recommendations</li>
+        </ul>
+        <a href="#" class="btn btn-outline service-learn-more">Learn More <span>&rarr;</span></a>
+      </div>
+      <div class="service-visual service-visual--expert">
+        <div class="service-widget widget--expert">
+          <span class="widget-label">Expert Alert</span>
+          <p class="widget-note">"Apply neem-based spray within 48 hrs to control aphid spread in Zone 2."</p>
+          <span class="widget-expert-name">— Dr. Anjali Kulkarni, Agronomist</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== WORKFLOW ===== -->
+<section class="workflow">
+  <div class="container">
+    <h2 class="section-title center">Our Services <span>Workflow</span></h2>
+    <div class="workflow-track">
+      <div class="workflow-step">
+        <div class="workflow-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-6 8 6v12H4z" stroke="#036832" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21v-7h6v7" stroke="#702D1B" stroke-width="1.6"/></svg>
+        </div>
+        <h4>Register Farm</h4>
+        <p>Create your farm profile and add land details.</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <div class="workflow-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="#036832" stroke-width="1.6"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="#702D1B" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Connect Sensors</h4>
+        <p>Connect to sensors or enter manual data.</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <div class="workflow-icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="12" rx="2" stroke="#036832" stroke-width="1.6"/><path d="M8 8V6a4 4 0 018 0v2" stroke="#702D1B" stroke-width="1.6"/></svg>
+        </div>
+        <h4>Monitor Crops</h4>
+        <p>Track crop, soil, and weather in real time.</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <div class="workflow-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a6 6 0 00-6 6c0 4-2 5-2 7h16c0-2-2-3-2-7a6 6 0 00-6-6z" stroke="#036832" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 19a2.5 2.5 0 005 0" stroke="#702D1B" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Receive Alerts</h4>
+        <p>Get instant alerts and recommendations.</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <div class="workflow-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M12 20V4M20 20v-7" stroke="#036832" stroke-width="1.8" stroke-linecap="round"/><path d="M4 10l4-4 4 3 8-8" stroke="#702D1B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>Improve Yield</h4>
+        <p>Take action and improve productivity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container testimonials-grid">
+    <div class="testimonial-card">
+      <p>&ldquo;This platform has helped me monitor my crops more efficiently. The weather alerts and irrigation reminders have significantly improved my farm&rsquo;s productivity.&rdquo;</p>
+      <div class="testimonial-author">
+        <span class="avatar">RP</span>
+        <div>
+          <strong>Ramesh Patil</strong>
+          <span>Farmer from Nashik</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-center">
+      <h2 class="section-title center">What Our <span>Farmers Say</span></h2>
+      <div class="testimonial-card testimonial-card--accent">
+        <p>&ldquo;The crop health monitoring feature allowed me to identify pest issues early, reducing crop losses and increasing my yield.&rdquo;</p>
+        <div class="testimonial-author">
+          <span class="avatar">SJ</span>
+          <div>
+            <strong>Savita Jadhav</strong>
+            <span>Farmer from Latur</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>&ldquo;Managing all my farm records digitally has made my work much easier. The reports and recommendations help me make better farming decisions.&rdquo;</p>
+      <div class="testimonial-author">
+        <span class="avatar">RP</span>
+        <div>
+          <strong>Ramesh Patil</strong>
+          <span>Farmer from Nashik</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 2C17 2 8 6 8 16C8 22.6274 12.3726 27 17 27C21.6274 27 26 22.6274 26 16C26 6 17 2 17 2Z" fill="#036832"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">AgriMonitor</span>
+          <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+        </div>
+      </a>
+      <p>Monitor crops, weather, soil moisture and irrigation in real time. Get smart insights, alerts and recommendations to improve productivity.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.2-1.5 1.6-1.5h1.6V3.7C15.9 3.6 15 3.5 14 3.5c-2.2 0-3.7 1.3-3.7 3.8v2.6H7.6V13h2.7v8h3.2z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3zm0 16.3a7.2 7.2 0 01-3.7-1l-.3-.2-2.7.7.7-2.6-.2-.3A7.3 7.3 0 1112 19.3zm4-5.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.7.9-.1.1-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.1-.2.2-.4 0-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 3.9 3.5.5.2.9.4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 3.5c2.5 0 2.8 0 3.8.1 1 .1 1.7.2 2.3.5.6.3 1.1.6 1.6 1.1.5.5.8 1 1.1 1.6.3.6.4 1.3.5 2.3.1 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 1-.2 1.7-.5 2.3-.3.6-.6 1.1-1.1 1.6-.5.5-1 .8-1.6 1.1-.6.3-1.3.4-2.3.5-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-1-.1-1.7-.2-2.3-.5-.6-.3-1.1-.6-1.6-1.1-.5-.5-.8-1-1.1-1.6-.3-.6-.4-1.3-.5-2.3-.1-1-.1-1.3-.1-3.8s0-2.8.1-3.8c.1-1 .2-1.7.5-2.3.3-.6.6-1.1 1.1-1.6.5-.5 1-.8 1.6-1.1.6-.3 1.3-.4 2.3-.5C9.2 3.5 9.5 3.5 12 3.5zm0 1.6c-2.4 0-2.7 0-3.7.1-.8 0-1.3.2-1.6.3-.4.1-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.8-.3 1.6-.1 1-.1 1.3-.1 3.7s0 2.7.1 3.7c0 .8.2 1.3.3 1.6.1.4.3.7.6 1 .3.3.6.5 1 .6.3.1.8.3 1.6.3 1 .1 1.3.1 3.7.1s2.7 0 3.7-.1c.8 0 1.3-.2 1.6-.3.4-.1.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.8.3-1.6.1-1 .1-1.3.1-3.7s0-2.7-.1-3.7c0-.8-.2-1.3-.3-1.6-.1-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.8-.3-1.6-.3-1-.1-1.3-.1-3.7-.1zm0 3.2a4.2 4.2 0 110 8.4 4.2 4.2 0 010-8.4zm0 1.6a2.6 2.6 0 100 5.2 2.6 2.6 0 000-5.2zm4.4-2.9a1 1 0 110 2 1 1 0 010-2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="#">Crop Monitoring</a>
+      <a href="#">Weather Updates</a>
+      <a href="#">Smart Irrigation</a>
+      <a href="#">Reports &amp; Analytics</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Our Services</h5>
+      <a href="services.html">Crop Health Monitoring</a>
+      <a href="services.html">Soil Moisture Monitoring</a>
+      <a href="services.html">Weather Forecasting</a>
+      <a href="services.html">Smart Irrigation</a>
+      <a href="services.html">Pest &amp; Disease Detection</a>
+      <a href="services.html">Farm Analytics</a>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h5>Get In Touch</h5>
+      <p><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg> +75 78390912</p>
+      <p><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm8 8L5 6v12h14V6l-7 6zm0-2l7-6H5l7 6z"/></svg> info@agrimoniture.com</p>
+      <p><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg> Pune, Maharashtra, India</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">&copy; 2026 AgriMonitor. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
