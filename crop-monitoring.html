@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crop Monitoring | AgriMonitor - Smart Farming, Better Tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2C17 2 8 6 8 16C8 22.6274 12.3726 27 17 27C21.6274 27 26 22.6274 26 16C26 6 17 2 17 2Z" fill="#036832"/>
+        <path d="M17 27V32" stroke="#702D1B" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M12 30C13.5 28.5 15 28 17 28C19 28 20.5 28.5 22 30" stroke="#702D1B" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">AgriMonitor</span>
+        <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="crop-monitoring.html" class="active">Crop Monitoring</a>
+      <a href="#">Weather</a>
+      <a href="#">Report</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="register.html" class="btn btn-solid">Register</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== CROP MONITORING HERO ===== -->
+<section class="cm-hero">
+  <div class="container cm-hero-grid">
+    <div class="cm-hero-text">
+      <h1 class="cm-title">Crop <span>Monitoring</span></h1>
+      <p class="cm-subtitle">
+        Monitor your crops in real-time with IOT sensors &amp; AI analytics to ensure
+        healthy growth and higher yield.
+      </p>
+      <button class="btn btn-solid btn-lg">Monitor Your Farm Today</button>
+    </div>
+    <div class="cm-hero-art" aria-hidden="true">
+      <svg viewBox="0 0 320 240" class="hero-art-svg">
+        <ellipse cx="160" cy="215" rx="140" ry="14" fill="#dfe6df"/>
+        <path d="M40 210c60-140 180-140 240 0" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".5"/>
+        <g fill="#c9d3c9">
+          <circle cx="70" cy="60" r="16"/><circle cx="90" cy="50" r="20"/><circle cx="112" cy="62" r="14"/>
+          <circle cx="230" cy="50" r="14"/><circle cx="252" cy="42" r="18"/><circle cx="272" cy="55" r="12"/>
+        </g>
+        <g stroke="#fff" stroke-width="6">
+          <line x1="10" y1="205" x2="310" y2="205"/>
+        </g>
+        <!-- picket fence -->
+        <g fill="#f4f4f0" stroke="#ccc" stroke-width="1">
+          <rect x="16" y="170" width="10" height="40" rx="2"/>
+          <rect x="30" y="165" width="10" height="45" rx="2"/>
+          <rect x="44" y="170" width="10" height="40" rx="2"/>
+          <rect x="58" y="165" width="10" height="45" rx="2"/>
+        </g>
+        <!-- gardener figure (simplified) -->
+        <g transform="translate(150,90)">
+          <ellipse cx="20" cy="118" rx="34" ry="8" fill="#00000010"/>
+          <circle cx="16" cy="8" r="11" fill="#3a3a3a"/>
+          <rect x="4" y="2" width="24" height="8" rx="4" fill="#1a1a1a"/>
+          <rect x="4" y="18" width="26" height="46" rx="10" fill="#036832"/>
+          <rect x="-4" y="60" width="16" height="46" rx="6" fill="#1a1a1a"/>
+          <rect x="24" y="60" width="16" height="46" rx="6" fill="#1a1a1a"/>
+          <path d="M28 30l24 16-8 10-24-14z" fill="#c98a4b"/>
+        </g>
+        <!-- potted plants -->
+        <g transform="translate(230,150)">
+          <path d="M0 40V16" stroke="#3f8f5c" stroke-width="3" stroke-linecap="round"/>
+          <path d="M0 26c-10-4-16-14-13-24 10 2 16 10 17 22" fill="#5fa176"/>
+          <path d="M0 18c9-5 13-15 9-25-9 3-14 12-13 23" fill="#036832"/>
+          <rect x="-14" y="40" width="28" height="20" rx="3" fill="#fff" stroke="#ccc"/>
+        </g>
+        <g transform="translate(270,158)">
+          <path d="M0 32V12" stroke="#3f8f5c" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M0 20c-8-3-12-11-10-19 8 2 13 8 13 18" fill="#5fa176"/>
+          <rect x="-11" y="32" width="22" height="16" rx="3" fill="#fff" stroke="#ccc"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUICK INFO BAR ===== -->
+<section class="cm-info-bar">
+  <div class="container cm-info-grid">
+    <div class="cm-info-card">
+      <div class="cm-info-icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="#17251c" stroke-width="1.6"/><path d="M3 9h18M8 3v4M16 3v4" stroke="#17251c" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div>
+        <span class="cm-info-label">Last Updated</span>
+        <strong class="cm-info-value">18 May, 06:00 AM</strong>
+      </div>
+    </div>
+    <div class="cm-info-card">
+      <div class="cm-info-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-6 8 6v12H4z" stroke="#17251c" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21v-7h6v7" stroke="#17251c" stroke-width="1.6"/></svg>
+      </div>
+      <div>
+        <span class="cm-info-label">Farm</span>
+        <strong class="cm-info-value">Green Field &ndash;1</strong>
+      </div>
+    </div>
+    <div class="cm-info-card">
+      <div class="cm-info-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-3 2-6 5-6 9a6 6 0 0012 0c0-4-3-7-6-9z" stroke="#17251c" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <span class="cm-info-label">Crop</span>
+        <strong class="cm-info-value">Cotton</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CROP HEALTH OVERVIEW ===== -->
+<section class="cm-overview">
+  <div class="container">
+    <h2 class="section-title center">Crop Health <span>Overview</span></h2>
+    <div class="overview-grid">
+      <div class="donut-card">
+        <div class="donut-wrap">
+          <svg viewBox="0 0 120 120" class="donut-svg">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#eef1ec" stroke-width="14"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#036832" stroke-width="14"
+              stroke-dasharray="226 314" stroke-dashoffset="0" transform="rotate(-90 60 60)" stroke-linecap="round"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#e8a83c" stroke-width="14"
+              stroke-dasharray="63 314" stroke-dashoffset="-226" transform="rotate(-90 60 60)" stroke-linecap="round"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#d9532b" stroke-width="14"
+              stroke-dasharray="25 314" stroke-dashoffset="-289" transform="rotate(-90 60 60)" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <ul class="donut-legend">
+          <li><span class="dot dot--green"></span>72% Healthy</li>
+          <li><span class="dot dot--amber"></span>20% Moderate</li>
+          <li><span class="dot dot--red"></span>8% Critical</li>
+        </ul>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20V10M12 10c0-4-3-6-7-6 0 4 3 6 7 6zM12 14c0-4 3-6 7-6 0 4-3 6-7 6z" stroke="#036832" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h4>Growth Stage</h4>
+        <strong>Vegetative</strong>
+        <span class="stat-tag stat-tag--good">On Track</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2c4 5 7 9 7 13.5A7 7 0 015 15.5C5 11 8 7 12 2z" stroke="#3f8fc9" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h4>Soil Moisture</h4>
+        <strong>42%</strong>
+        <span class="stat-tag stat-tag--good">Optimal</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3a2 2 0 00-2 2v9.5a4 4 0 102 6.9V5a2 2 0 00-2-2z" stroke="#d9532b" stroke-width="1.6"/><circle cx="12" cy="18" r="3" fill="#d9532b"/></svg></div>
+        <h4>Temperature</h4>
+        <strong>28%</strong>
+        <span class="stat-tag stat-tag--good">Optimal</span>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#036832" stroke-width="1.6"/><path d="M8 12h8M12 8v8" stroke="#036832" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h4>Soil pH</h4>
+        <strong>6.5</strong>
+        <span class="stat-tag stat-tag--good">Optimal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WEATHER + LOCATION ===== -->
+<section class="cm-weather-location">
+  <div class="container weather-location-grid">
+    <div>
+      <h3 class="cm-subheading">Current <span>Weather</span></h3>
+      <div class="weather-card">
+        <div class="weather-top">
+          <div>
+            <strong class="weather-city">Some City</strong>
+            <span class="weather-day">Monday</span>
+          </div>
+          <strong class="weather-temp">+20&deg;C</strong>
+        </div>
+        <div class="weather-icon-big">
+          <svg viewBox="0 0 64 64" width="56" height="56"><circle cx="26" cy="26" r="14" fill="#f4c542"/><path d="M46 40a13 13 0 00-12-17 16 16 0 00-30 5 11 11 0 002 22h37a10 10 0 003-10z" fill="#e7edf3"/></svg>
+        </div>
+        <div class="weather-week">
+          <div class="weather-day-col"><span>SUN</span><em>+18&deg;C</em></div>
+          <div class="weather-day-col"><span>MON</span><em>+18&deg;C</em></div>
+          <div class="weather-day-col"><span>TUE</span><em>+18&deg;C</em></div>
+          <div class="weather-day-col"><span>WED</span><em>+25&deg;C</em></div>
+          <div class="weather-day-col"><span>THU</span><em>+10&deg;C</em></div>
+          <div class="weather-day-col"><span>FRI</span><em>+8&deg;C</em></div>
+          <div class="weather-day-col"><span>SAT</span><em>+22&deg;C</em></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="cm-subheading">Farm <span>Location</span></h3>
+      <div class="location-grid">
+        <div class="map-card" aria-hidden="true">
+          <svg viewBox="0 0 300 220" class="map-svg">
+            <rect width="300" height="220" fill="#e9e4d3"/>
+            <path d="M0 40h300M0 90h300M0 140h300M0 180h300" stroke="#d7cfab" stroke-width="1"/>
+            <path d="M50 0v220M110 0v220M170 0v220M230 0v220" stroke="#d7cfab" stroke-width="1"/>
+            <path d="M0 60c60 20 120-10 180 10s90 30 120 10v140H0z" fill="#bcd0b8"/>
+            <path d="M0 100c80-10 140 30 220 10s60-10 80 0v100H0z" fill="#a9c9ac" opacity=".8"/>
+            <path d="M20 10c40 30 60 60 40 100" stroke="#e8d97a" stroke-width="6" fill="none" opacity=".7"/>
+            <circle cx="150" cy="110" r="8" fill="#d9532b" stroke="#fff" stroke-width="3"/>
+            <path d="M150 118l0 14" stroke="#d9532b" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="location-card">
+          <h4>Green Field&ndash;1</h4>
+          <p>Near Shindewadi, Ahmadnagar, Maharashtra</p>
+          <a href="#" class="btn btn-outline location-btn">
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+            View On Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ALERTS + RECOMMENDATIONS ===== -->
+<section class="cm-alerts">
+  <div class="container alerts-grid">
+    <div class="alerts-card">
+      <h3 class="cm-subheading">Disease &amp; <span>Pest Alerts</span></h3>
+      <div class="alert-item">
+        <div class="alert-thumb alert-thumb--aphid" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="8" fill="#e7f0e9"/><path d="M24 10c-8 5-14 12-14 20a14 14 0 0028 0c0-8-6-15-14-20z" fill="#8fb894"/><circle cx="20" cy="26" r="1.6" fill="#5a3a2a"/><circle cx="27" cy="30" r="1.6" fill="#5a3a2a"/><circle cx="24" cy="20" r="1.6" fill="#5a3a2a"/></svg>
+        </div>
+        <div class="alert-body">
+          <div class="alert-heading">
+            <h5>Aphid Infestation Detected</h5>
+            <span class="alert-time">18 May, 06:30 AM</span>
+          </div>
+          <p>Aphids can reduce yield by sucking sap from plants.</p>
+        </div>
+        <span class="risk-badge risk-badge--high">High Risk</span>
+      </div>
+
+      <div class="alert-item">
+        <div class="alert-thumb alert-thumb--leafspot" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="8" fill="#e7f0e9"/><path d="M24 10c-8 5-14 12-14 20a14 14 0 0028 0c0-8-6-15-14-20z" fill="#a9c48b"/><circle cx="19" cy="24" r="2.6" fill="#c9a23a"/><circle cx="29" cy="30" r="2.2" fill="#c9a23a"/><circle cx="26" cy="18" r="2" fill="#c9a23a"/></svg>
+        </div>
+        <div class="alert-body">
+          <div class="alert-heading">
+            <h5>Leaf Spot Detected</h5>
+            <span class="alert-time">18 May, 04:30 AM</span>
+          </div>
+          <p>Yellow leaf spot disease found in some areas.</p>
+        </div>
+        <span class="risk-badge risk-badge--medium">Medium Risk</span>
+      </div>
+    </div>
+
+    <div class="recommend-card">
+      <h3 class="cm-subheading">AI <span>Recommendation</span></h3>
+      <ul class="service-checklist recommend-list">
+        <li>Irrigate your crop in the next 24 hours.</li>
+        <li>Apply nitrogen-based fertilizer in recommended quantity.</li>
+        <li>Monitor aphid infestation and use neem oil spray.</li>
+        <li>Maintain optimal soil moisture for better growth.</li>
+      </ul>
+      <a href="#" class="link-accent view-all-link">View All Recommendations &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cm-cta">
+  <div class="container cm-cta-grid">
+    <div class="cm-cta-text">
+      <h3>Stay Ahead with Real-Time Monitoring</h3>
+      <p>Get timely alerts and expert recommendations to protect your crops and maximize your yield.</p>
+    </div>
+    <div class="cm-cta-actions">
+      <button class="btn btn-outline">
+        <svg viewBox="0 0 24 24" width="16" height="16" style="margin-right:6px;"><path fill="currentColor" d="M12 2a6 6 0 00-6 6c0 4-2 5-2 7h16c0-2-2-3-2-7a6 6 0 00-6-6z"/><path d="M9.5 19a2.5 2.5 0 005 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+        Enable Alerts
+      </button>
+      <button class="btn btn-solid">Monitor Now</button>
+    </div>
+    <div class="cm-cta-art" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="70" height="70">
+        <path d="M50 90V50" stroke="#8a5a3d" stroke-width="6" stroke-linecap="round"/>
+        <path d="M50 55c-20-6-30-26-24-46 20 4 32 20 34 40" fill="#5fa176"/>
+        <path d="M50 40c16-8 22-26 14-44-16 6-24 22-20 38" fill="#036832"/>
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 2C17 2 8 6 8 16C8 22.6274 12.3726 27 17 27C21.6274 27 26 22.6274 26 16C26 6 17 2 17 2Z" fill="#036832"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">AgriMonitor</span>
+          <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+        </div>
+      </a>
+      <p>Monitor crops, weather, soil moisture and irrigation in real time. Get smart insights, alerts and recommendations to improve productivity.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.2-1.5 1.6-1.5h1.6V3.7C15.9 3.6 15 3.5 14 3.5c-2.2 0-3.7 1.3-3.7 3.8v2.6H7.6V13h2.7v8h3.2z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3zm0 16.3a7.2 7.2 0 01-3.7-1l-.3-.2-2.7.7.7-2.6-.2-.3A7.3 7.3 0 1112 19.3zm4-5.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.7.9-.1.1-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.1-.2.2-.4 0-.1 0-.3 0-.4 0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 3.9 3.5.5.2.9.4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 3.5c2.5 0 2.8 0 3.8.1 1 .1 1.7.2 2.3.5.6.3 1.1.6 1.6 1.1.5.5.8 1 1.1 1.6.3.6.4 1.3.5 2.3.1 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 1-.2 1.7-.5 2.3-.3.6-.6 1.1-1.1 1.6-.5.5-1 .8-1.6 1.1-.6.3-1.3.4-2.3.5-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-1-.1-1.7-.2-2.3-.5-.6-.3-1.1-.6-1.6-1.1-.5-.5-.8-1-1.1-1.6-.3-.6-.4-1.3-.5-2.3-.1-1-.1-1.3-.1-3.8s0-2.8.1-3.8c.1-1 .2-1.7.5-2.3.3-.6.6-1.1 1.1-1.6.5-.5 1-.8 1.6-1.1.6-.3 1.3-.4 2.3-.5C9.2 3.5 9.5 3.5 12 3.5zm0 1.6c-2.4 0-2.7 0-3.7.1-.8 0-1.3.2-1.6.3-.4.1-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.8-.3 1.6-.1 1-.1 1.3-.1 3.7s0 2.7.1 3.7c0 .8.2 1.3.3 1.6.1.4.3.7.6 1 .3.3.6.5 1 .6.3.1.8.3 1.6.3 1 .1 1.3.1 3.7.1s2.7 0 3.7-.1c.8 0 1.3-.2 1.6-.3.4-.1.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.8.3-1.6.1-1 .1-1.3.1-3.7s0-2.7-.1-3.7c0-.8-.2-1.3-.3-1.6-.1-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.8-.3-1.6-.3-1-.1-1.3-.1-3.7-.1zm0 3.2a4.2 4.2 0 110 8.4 4.2 4.2 0 010-8.4zm0 1.6a2.6 2.6 0 100 5.2 2.6 2.6 0 000-5.2zm4.4-2.9a1 1 0 110 2 1 1 0 010-2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="crop-monitoring.html">Crop Monitoring</a>
+      <a href="#">Weather Updates</a>
+      <a href="#">Smart Irrigation</a>
+      <a href="#">Reports &amp; Analytics</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Our Services</h5>
+      <a href="services.html">Crop Health Monitoring</a>
+      <a href="services.html">Soil Moisture Monitoring</a>
+      <a href="services.html">Weather Forecasting</a>
+      <a href="services.html">Smart Irrigation</a>
+      <a href="services.html">Pest &amp; Disease Detection</a>
+      <a href="services.html">Farm Analytics</a>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h5>Get In Touch</h5>
+      <p><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg> +75 78390912</p>
+      <p><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm8 8L5 6v12h14V6l-7 6zm0-2l7-6H5l7 6z"/></svg> info@agrimoniture.com</p>
+      <p><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg> Pune, Maharashtra, India</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">&copy; 2026 AgriMonitor. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
