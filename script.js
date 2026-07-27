@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainNav = document.getElementById('mainNav');
   const header = document.getElementById('siteHeader');
   const scrollBtn = document.getElementById('scrollBtn');
+  const scrollBtnLeft = document.getElementById('scrollBtnLeft');
   const featureTrack = document.getElementById('featureTrack');
 
   // Mobile nav toggle
@@ -38,20 +39,35 @@ document.addEventListener('DOMContentLoaded', () => {
   applyHeaderShadow();
   window.addEventListener('scroll', applyHeaderShadow, { passive: true });
 
-  // Feature strip: right-arrow scroll button (mobile)
-  if (scrollBtn && featureTrack) {
+  // Feature strip: left/right arrow scroll buttons
+  if (scrollBtn && scrollBtnLeft && featureTrack) {
     scrollBtn.addEventListener('click', () => {
-      featureTrack.scrollBy({ left: 190, behavior: 'smooth' });
+      featureTrack.scrollBy({ left: 220, behavior: 'smooth' });
+    });
+    scrollBtnLeft.addEventListener('click', () => {
+      featureTrack.scrollBy({ left: -220, behavior: 'smooth' });
     });
 
     const updateScrollBtnVisibility = () => {
-      const atEnd = featureTrack.scrollLeft + featureTrack.clientWidth >= featureTrack.scrollWidth - 8;
-      scrollBtn.style.opacity = atEnd ? '0' : '1';
-      scrollBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+      const maxScroll = featureTrack.scrollWidth - featureTrack.clientWidth;
+      const atStart = featureTrack.scrollLeft <= 8;
+      const atEnd = featureTrack.scrollLeft >= maxScroll - 8;
+      const hasOverflow = maxScroll > 8;
+
+      scrollBtnLeft.disabled = !hasOverflow || atStart;
+      scrollBtn.disabled = !hasOverflow || atEnd;
     };
+
     featureTrack.addEventListener('scroll', updateScrollBtnVisibility, { passive: true });
     window.addEventListener('resize', updateScrollBtnVisibility);
+
+    // Run once immediately, then again after layout/fonts/images settle
+    // (scrollWidth can be measured incorrectly on the very first paint,
+    // which previously left the arrow permanently hidden).
     updateScrollBtnVisibility();
+    window.addEventListener('load', updateScrollBtnVisibility);
+    requestAnimationFrame(updateScrollBtnVisibility);
+    setTimeout(updateScrollBtnVisibility, 300);
   }
 
   // Active nav link highlight based on scroll position
