@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Updates | AgriMonitor - Smart Farming, Better Tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="18" fill="#036832"/>
+        <path d="M18 27V17" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M18 21c-5-1-8-5-7-10 5 1 8 5 7 10z" fill="#ffffff"/>
+        <path d="M18 17c4-2 6-6 4-11-4 2-6 6-4 11z" fill="#B49D97"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">AgriMonitor</span>
+        <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="crop-monitoring.html">Crop Monitoring</a>
+      <a href="weather.html" class="active">Weather</a>
+      <a href="#">Report</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="register.html" class="btn btn-solid">Register</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="weather-hero">
+    <div class="container weather-hero-inner">
+      <div class="weather-hero-copy">
+        <h1 class="weather-hero-title">Weather <span>Updates</span></h1>
+        <p class="weather-hero-lead">Real-Time Weather Information for Smarter Farming</p>
+        <p class="weather-hero-sub">Stay ahead of changing weather conditions. Get accurate, real-time updates and forecasts to plan your farming activities better.</p>
+        <a href="#forecast" class="btn btn-solid weather-hero-cta">View Full Forecast</a>
+      </div>
+
+      <div class="weather-hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 300" width="100%" height="100%">
+          <!-- umbrella -->
+          <g transform="translate(30,10)">
+            <path d="M75 0C40 0 12 24 4 56h142C138 24 110 0 75 0z" fill="#036832"/>
+            <path d="M75 0C55 0 38 24 30 56h30V0z" fill="#024d25" opacity=".35"/>
+            <path d="M120 0c20 0 37 24 26 56h-26V0z" fill="#024d25" opacity=".25"/>
+            <rect x="72" y="52" width="6" height="90" rx="3" fill="#5a3a2a"/>
+            <path d="M78 130c0 10 10 16 20 12" stroke="#5a3a2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </g>
+          <!-- woman figure -->
+          <g transform="translate(58,96)">
+            <circle cx="42" cy="24" r="20" fill="#c98a5a"/>
+            <path d="M24 20c-2-14 8-24 18-24s20 10 18 24c-8-6-28-6-36 0z" fill="#2c2016"/>
+            <path d="M18 60c4-10 16-16 24-16s20 6 24 16l10 90c-10 8-58 8-68 0z" fill="#036832"/>
+            <path d="M18 60c4-10 16-16 24-16s20 6 24 16" fill="none" stroke="#024d25" stroke-width="1.5" opacity=".4"/>
+            <path d="M18 66c-10 8-16 20-14 34" stroke="#c98a5a" stroke-width="9" stroke-linecap="round" fill="none"/>
+            <path d="M66 66c10 6 15 16 14 28" stroke="#c98a5a" stroke-width="9" stroke-linecap="round" fill="none"/>
+            <rect x="20" y="128" width="13" height="38" rx="6" fill="#3a2a1c"/>
+            <rect x="50" y="128" width="13" height="38" rx="6" fill="#3a2a1c"/>
+          </g>
+          <!-- phone widget -->
+          <g transform="translate(230,60)">
+            <rect x="0" y="0" width="100" height="170" rx="18" fill="#ffffff" stroke="#E6E9E6" stroke-width="2"/>
+            <text x="16" y="34" font-family="Manrope, sans-serif" font-size="22" font-weight="800" fill="#17251c">10°</text>
+            <text x="16" y="52" font-family="Manrope, sans-serif" font-size="12" fill="#4d5a51">Rain</text>
+            <g transform="translate(60,14)">
+              <ellipse cx="12" cy="12" rx="16" ry="11" fill="#BDC7BF"/>
+              <line x1="6" y1="30" x2="3" y2="38" stroke="#036832" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="14" y1="30" x2="11" y2="40" stroke="#036832" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="22" y1="30" x2="19" y2="38" stroke="#036832" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+            <rect x="14" y="70" width="72" height="1" fill="#E6E9E6"/>
+            <rect x="14" y="86" width="30" height="8" rx="4" fill="#F7F6F2"/>
+            <rect x="14" y="100" width="50" height="8" rx="4" fill="#F7F6F2"/>
+            <rect x="14" y="114" width="40" height="8" rx="4" fill="#F7F6F2"/>
+            <rect x="14" y="136" width="72" height="20" rx="8" fill="#036832" opacity=".08"/>
+          </g>
+          <!-- ground / plant -->
+          <path d="M0 260c60-14 110 6 170-4s130-18 190 2v42H0z" fill="#E6E9E6"/>
+          <g transform="translate(300,220)">
+            <path d="M0 40V18" stroke="#3f8f5c" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M0 26c-9-3-13-11-11-20 9 2 13 9 11 20z" fill="#5fa176"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE CONDITIONS ===== -->
+  <section class="live-conditions" id="forecast">
+    <div class="container">
+      <div class="live-conditions-head">
+        <div class="live-conditions-title">
+          <h2>Live Weather Conditions</h2>
+          <span class="live-badge"><span class="live-dot"></span>Updated Just Now</span>
+        </div>
+        <div class="live-location">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="#036832" d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+          Green Field-1, Ahmednagar, Maharashtra
+        </div>
+      </div>
+
+      <div class="metrics-bar">
+        <div class="metric">
+          <span class="metric-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 15.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm1.5-1.6V5a1.5 1.5 0 00-3 0v8.9a3.5 3.5 0 103 0z" stroke="#036832" stroke-width="1.4" fill="#036832" fill-opacity=".08"/></svg>
+          </span>
+          <div>
+            <span class="metric-label">Temperature</span>
+            <span class="metric-value">28<small>°C</small></span>
+            <span class="metric-note">Feels like 30°C</span>
+          </div>
+        </div>
+        <div class="metric">
+          <span class="metric-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 3s6 7 6 11.5A6 6 0 016 14.5C6 10 12 3 12 3z" stroke="#036832" stroke-width="1.4" fill="#036832" fill-opacity=".08"/></svg>
+          </span>
+          <div>
+            <span class="metric-label">Humidity</span>
+            <span class="metric-value">65<small>%</small></span>
+            <span class="metric-note">Moderate</span>
+          </div>
+        </div>
+        <div class="metric">
+          <span class="metric-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M7 11.5a4.5 4.5 0 118.94-1H16a3.5 3.5 0 010 7H7a3 3 0 01-.5-5.96z" stroke="#036832" stroke-width="1.4" fill="#036832" fill-opacity=".08"/><path d="M8 19l-1 2M12 19l-1 2M16 19l-1 2" stroke="#036832" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <span class="metric-label">Rainfall</span>
+            <span class="metric-value">0.0<small>mm</small></span>
+            <span class="metric-note">Today</span>
+          </div>
+        </div>
+        <div class="metric">
+          <span class="metric-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M3 8h11a3 3 0 10-3-3M3 16h14a3 3 0 11-3 3M3 12h9" stroke="#036832" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <span class="metric-label">Wind Speed</span>
+            <span class="metric-value">12<small>km/h</small></span>
+            <span class="metric-note">SW Direction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALERTS + RECOMMENDATIONS ===== -->
+  <section class="alerts-section">
+    <div class="container alerts-grid">
+
+      <div class="panel-card">
+        <div class="panel-head">
+          <h3>Weather <span>Alerts</span></h3>
+          <a href="#" class="link-accent">View All Alerts</a>
+        </div>
+
+        <ul class="alert-list">
+          <li class="alert-row">
+            <span class="alert-icon alert-icon--high">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#B3261E" d="M12 2L1 21h22L12 2zm0 6.5c.6 0 1 .4 1 1V14a1 1 0 01-2 0V9.5c0-.6.4-1 1-1zM12 18a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6z"/></svg>
+            </span>
+            <div class="alert-body">
+              <h4>Heavy Rain Warning</h4>
+              <p>Heavy rainfall expected in next 24 hours.</p>
+              <span class="alert-time">18 May, 06:30 AM</span>
+            </div>
+            <span class="risk-pill risk-pill--high">High Risk</span>
+          </li>
+
+          <li class="alert-row">
+            <span class="alert-icon alert-icon--medium">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#A15C00" d="M12 2L1 21h22L12 2zm0 6.5c.6 0 1 .4 1 1V14a1 1 0 01-2 0V9.5c0-.6.4-1 1-1zM12 18a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6z"/></svg>
+            </span>
+            <div class="alert-body">
+              <h4>Heat Wave Alert</h4>
+              <p>Temperature may reach up to 40°C</p>
+              <span class="alert-time">18 May, 04:30 AM</span>
+            </div>
+            <span class="risk-pill risk-pill--medium">Medium risk</span>
+          </li>
+
+          <li class="alert-row">
+            <span class="alert-icon alert-icon--low">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4d5a51" d="M12 2L1 21h22L12 2zm0 6.5c.6 0 1 .4 1 1V14a1 1 0 01-2 0V9.5c0-.6.4-1 1-1zM12 18a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6z"/></svg>
+            </span>
+            <div class="alert-body">
+              <h4>Strong Wind Alert</h4>
+              <p>Strong Winds expected from South-West</p>
+              <span class="alert-time">18 May, 04:30 AM</span>
+            </div>
+            <span class="risk-pill risk-pill--low">Low</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-head">
+          <h3>Farming <span>Recommendation</span></h3>
+        </div>
+
+        <ul class="recommend-list">
+          <li class="recommend-row" tabindex="0">
+            <span class="recommend-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z" stroke="#036832" stroke-width="1.5"/><path d="M12 21v-4" stroke="#036832" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div class="recommend-body">
+              <h4>Best day for irrigation</h4>
+              <p>Tomorrow is ideal for irrigation</p>
+            </div>
+            <svg class="chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" stroke="#4d5a51" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </li>
+
+          <li class="recommend-row" tabindex="0">
+            <span class="recommend-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M8 21l4-9 4 9M9 8V4a3 3 0 016 0v4" stroke="#036832" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 4l16 16" stroke="#036832" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div class="recommend-body">
+              <h4>Avoid pesticide spraying</h4>
+              <p>Rain expected in next 24 hours.</p>
+            </div>
+            <svg class="chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" stroke="#4d5a51" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </li>
+
+          <li class="recommend-row" tabindex="0">
+            <span class="recommend-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M4 20L20 4M4 20l4-1 8-8-3-3-8 8-1 4z" stroke="#036832" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="recommend-body">
+              <h4>Best time for harvesting</h4>
+              <p>Harvesting condition is good this week</p>
+            </div>
+            <svg class="chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" stroke="#4d5a51" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </li>
+
+          <li class="recommend-row" tabindex="0">
+            <span class="recommend-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 20l4-12 3 2 3-2 4 12" stroke="#036832" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 20h16" stroke="#036832" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div class="recommend-body">
+              <h4>Soil maintenance</h4>
+              <p>Check soil moisture and maintain optimal levels</p>
+            </div>
+            <svg class="chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" stroke="#4d5a51" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="weather-cta">
+    <div class="weather-cta-bg" style="background-image:url('https://images.stockcake.com/public/e/7/e/e7eae82b-a5c3-4d42-b799-e848ffb44793_large/golden-hour-farm-stockcake.jpg')"></div>
+    <div class="weather-cta-overlay"></div>
+    <div class="container weather-cta-inner">
+      <div class="weather-cta-copy">
+        <span class="weather-cta-eyebrow">Plan Your Farming</span>
+        <h2>with Accurate weather insights</h2>
+        <p>Get precise weather information and smart recommendations to improve your crop yield minimize risks</p>
+        <a href="services.html" class="btn btn-solid">Explore Smart Irrigation</a>
+      </div>
+      <div class="weather-cta-art" aria-hidden="true">
+        <svg viewBox="0 0 240 300" width="100%" height="100%">
+          <g transform="translate(60,120)">
+            <rect x="0" y="0" width="94" height="160" rx="16" fill="#0d1f13" stroke="#3f8f5c" stroke-width="2"/>
+            <text x="14" y="30" font-family="Manrope, sans-serif" font-size="18" font-weight="800" fill="#ffffff">29°</text>
+            <text x="14" y="48" font-family="Manrope, sans-serif" font-size="11" fill="#BDC7BF">Sunny</text>
+            <g transform="translate(60,10)"><circle cx="10" cy="10" r="8" fill="#F2C14E"/></g>
+            <rect x="14" y="62" width="66" height="1" fill="#3f8f5c" opacity=".4"/>
+            <rect x="14" y="76" width="14" height="14" rx="4" fill="#3f8f5c" opacity=".5"/>
+            <rect x="34" y="76" width="14" height="14" rx="4" fill="#3f8f5c" opacity=".5"/>
+            <rect x="54" y="76" width="14" height="14" rx="4" fill="#3f8f5c" opacity=".5"/>
+            <rect x="14" y="100" width="66" height="8" rx="4" fill="#3f8f5c" opacity=".3"/>
+          </g>
+          <g transform="translate(120,60)">
+            <circle cx="30" cy="24" r="18" fill="#c98a5a"/>
+            <path d="M14 20c-2-12 8-20 16-20s18 8 16 20c-8-5-24-5-32 0z" fill="#2c2016"/>
+            <path d="M12 52c4-8 14-13 18-13s16 5 18 13l8 74c-8 6-46 6-52 0z" fill="#036832"/>
+            <path d="M10 56c-6 4-10 12-10 20" stroke="#c98a5a" stroke-width="8" stroke-linecap="round" fill="none"/>
+            <path d="M50 56c8-8 14-10 14-10" stroke="#c98a5a" stroke-width="8" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="weather-subscribe">
+    <div class="container weather-subscribe-inner">
+      <div class="weather-subscribe-copy">
+        <h3>Stay Updated with Weather Alerts</h3>
+        <p>Subscribe to get real-time weather alerts and farming tips.</p>
+      </div>
+      <form class="subscribe-form" id="weatherSubscribeForm" novalidate>
+        <input type="email" id="subscribeEmail" placeholder="Enter Your Email address" required>
+        <button type="submit" class="btn btn-solid">Subscribe</button>
+      </form>
+      <span class="weather-subscribe-note" id="subscribeNote" role="status" aria-live="polite"></span>
+      <div class="weather-subscribe-art" aria-hidden="true">
+        <svg viewBox="0 0 60 70" width="56" height="66">
+          <path d="M30 68V32" stroke="#5a3a2a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M30 40c-16-4-24-18-20-34 16 3 24 16 20 34z" fill="#5fa176"/>
+          <path d="M30 32c15-6 20-19 15-33-15 4-20 17-15 33z" fill="#036832"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#036832"/>
+          <path d="M18 27V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M18 21c-5-1-8-5-7-10 5 1 8 5 7 10z" fill="#ffffff"/>
+          <path d="M18 17c4-2 6-6 4-11-4 2-6 6-4 11z" fill="#B49D97"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">AgriMonitor</span>
+          <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+        </div>
+      </a>
+      <p>Monitor crops, weather, soil moisture and irrigation in real time. Get smart insights, alerts and recommendations to improve productivity.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook" class="social-icon social-icon--facebook">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#1877F2" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp" class="social-icon social-icon--whatsapp">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#25D366" d="M12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9C23.9 5.3 18.6 0 12 0z"/><path fill="#fff" d="M17.5 15.3c-.3.7-1.5 1.4-2.1 1.4-.5.1-1.2.1-2-.2-.5-.2-1.1-.4-1.9-.7-3.2-1.4-5.3-4.6-5.5-4.8-.2-.2-1.3-1.7-1.3-3.3s.8-2.3 1.1-2.7c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.3.6.9 2.1 1 2.3.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.5-.5.6-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.2.8-.1.2-.3.9-1 1.1-1.4.2-.4.5-.3.8-.2s2 .9 2.3 1.1.6.3.6.5c.1.2.1.9-.2 1.6z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon social-icon--instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18"><defs><radialGradient id="igGrad2" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="15%" stop-color="#fdf497"/><stop offset="35%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#igGrad2)"/><path fill="#fff" d="M12 6.4a5.6 5.6 0 100 11.2 5.6 5.6 0 000-11.2zm0 9.2a3.6 3.6 0 110-7.2 3.6 3.6 0 010 7.2zM18.9 6.2a1.3 1.3 0 11-2.6 0 1.3 1.3 0 012.6 0z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="crop-monitoring.html">Crop Monitoring</a>
+      <a href="weather.html">Weather Updates</a>
+      <a href="services.html">Smart Irrigation</a>
+      <a href="#">Reports &amp; Analytics</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Our Services</h5>
+      <a href="services.html">Crop Health Monitoring</a>
+      <a href="services.html">Soil Moisture Monitoring</a>
+      <a href="services.html">Weather Forecasting</a>
+      <a href="services.html">Smart Irrigation</a>
+      <a href="services.html">Pest &amp; Disease Detection</a>
+      <a href="services.html">Farm Analytics</a>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h5>Get In Touch</h5>
+      <a class="contact-link" href="tel:+917578390912"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg> +91 75783 90912</a>
+      <a class="contact-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@agrimoniture.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm8 8L5 6v12h14V6l-7 6zm0-2l7-6H5l7 6z"/></svg> info@agrimoniture.com</a>
+      <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Pune,+Maharashtra,+India" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg> Pune, Maharashtra, India</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 AgriMonitor. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
