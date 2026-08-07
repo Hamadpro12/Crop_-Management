@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQs | AgriMonitor - Smart Farming, Better Tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="18" fill="#036832"/>
+        <path d="M18 27V17" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M18 21c-5-1-8-5-7-10 5 1 8 5 7 10z" fill="#ffffff"/>
+        <path d="M18 17c4-2 6-6 4-11-4 2-6 6-4 11z" fill="#B49D97"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">AgriMonitor</span>
+        <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="crop-monitoring.html">Crop Monitoring</a>
+      <a href="weather.html">Weather</a>
+      <a href="irrigation.html">Irrigation</a>
+      <a href="report.html">Report</a>
+      <a href="faqs.html" class="active">FAQs</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="register.html" class="btn btn-solid">Register</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="faqs-hero">
+    <div class="container faqs-hero-inner">
+      <div class="faqs-hero-copy">
+        <h1>Frequently Asked<br><span>Questions</span></h1>
+        <p>Find answers to the most common questions about our smart farming platform.</p>
+        <div class="faqs-search">
+          <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" stroke="#036832" stroke-width="1.8" fill="none"/><path d="M20 20l-3.5-3.5" stroke="#036832" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" id="faqSearch" placeholder="Search for questions...">
+        </div>
+      </div>
+
+      <div class="faqs-hero-art" aria-hidden="true">
+        <svg viewBox="0 0 300 300" width="100%" height="100%">
+          <path d="M20 250c50-10 90 8 130-4s90-20 130-2v56H20z" fill="#E6E9E6"/>
+          <g transform="translate(20,190)">
+            <path d="M0 60V20" stroke="#036832" stroke-width="4" stroke-linecap="round"/>
+            <path d="M0 32c-14-4-20-16-17-30 14 3 20 14 17 30z" fill="#5fa176"/>
+            <path d="M0 26c12-6 17-16 13-29-13 4-17 15-13 29z" fill="#036832"/>
+          </g>
+          <text x="130" y="200" font-family="Manrope, sans-serif" font-size="220" font-weight="800" fill="#036832" text-anchor="middle">?</text>
+          <g transform="translate(155,40)">
+            <circle cx="45" cy="35" r="26" fill="#c98a5a"/>
+            <path d="M20 30c-2-14 10-24 25-24s27 10 25 24c-10-6-40-6-50 0z" fill="#1c1c1c"/>
+            <path d="M10 66c5-12 20-20 35-20s30 8 35 20l4 60H8z" fill="#17251c"/>
+            <path d="M10 74c-10 5-16 14-15 24" stroke="#c98a5a" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M78 60c8-2 12 4 12 4" stroke="#c98a5a" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <rect x="20" y="118" width="16" height="46" rx="7" fill="#1c1c1c"/>
+            <rect x="52" y="118" width="16" height="46" rx="7" fill="#1c1c1c"/>
+          </g>
+          <g transform="translate(235,60)">
+            <circle cx="16" cy="16" r="16" fill="#fff" stroke="#E6E9E6" stroke-width="1.5"/>
+            <text x="16" y="22" font-family="Manrope, sans-serif" font-size="16" font-weight="800" fill="#036832" text-anchor="middle">?</text>
+          </g>
+          <text x="60" y="35" font-family="Manrope, sans-serif" font-size="22" font-weight="800" fill="#A3B7A7">?</text>
+          <text x="235" y="215" font-family="Manrope, sans-serif" font-size="18" font-weight="800" fill="#A3B7A7">?</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY FILTERS ===== -->
+  <section class="faqs-categories">
+    <div class="container faqs-cat-wrap">
+      <button class="scroll-btn scroll-btn--left" id="faqScrollLeft" aria-label="Scroll categories left">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M15 6l-6 6 6 6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="faqs-cat-track" id="faqCatTrack">
+        <button class="faqs-cat-pill is-active" data-category="all">
+          <span class="faqs-cat-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="9" stroke="#036832" stroke-width="1.6"/><path d="M9.5 9a2.5 2.5 0 114 2c-.9.7-1.5 1.2-1.5 2.5" stroke="#036832" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="#036832"/></svg>
+          </span>
+          <span>All Questions</span>
+        </button>
+        <button class="faqs-cat-pill" data-category="weather">
+          <span class="faqs-cat-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="#036832" stroke-width="1.5"/><circle cx="12" cy="12" r="3.2" fill="#036832"/></svg>
+          </span>
+          <span>Weather Update</span>
+        </button>
+        <button class="faqs-cat-pill" data-category="irrigation">
+          <span class="faqs-cat-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z" stroke="#036832" stroke-width="1.6"/></svg>
+          </span>
+          <span>Smart Irrigation</span>
+        </button>
+        <button class="faqs-cat-pill" data-category="soil">
+          <span class="faqs-cat-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 20c8 0 12-6 12-14 0 0-10-2-14 6 3-1 5-1 7 0-4 1-6 4-5 8z" fill="#036832"/></svg>
+          </span>
+          <span>Soil Update</span>
+        </button>
+        <button class="faqs-cat-pill" data-category="technical">
+          <span class="faqs-cat-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="3" stroke="#036832" stroke-width="1.6"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4" stroke="#036832" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <span>Technical Support</span>
+        </button>
+        <button class="faqs-cat-pill" data-category="account">
+          <span class="faqs-cat-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="8" r="3.5" stroke="#036832" stroke-width="1.6"/><path d="M4.5 20c1.5-4.5 5-6 7.5-6s6 1.5 7.5 6" stroke="#036832" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <span>Account &amp; Billing</span>
+        </button>
+      </div>
+      <button class="scroll-btn scroll-btn--right" id="faqScrollRight" aria-label="Scroll categories right">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== FAQ LIST ===== -->
+  <section class="faqs-list-section">
+    <div class="container">
+      <div class="faqs-list" id="faqsList">
+
+        <div class="faqs-item" data-category="all" data-question="what is the farmer crop monitoring system">
+          <button class="faqs-question" aria-expanded="true">
+            <span><span class="faqs-num">1.</span> What is the Farmer Crop Monitoring System?</span>
+            <svg class="faqs-chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" stroke="#036832" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faqs-answer">
+            <p>Farmer Crop Monitoring System is a smart agriculture platform that helps farmers monitor crop health, track weather updates, manage irrigation and analyse farm performance using real-time data and insights.</p>
+          </div>
+        </div>
+
+        <div class="faqs-item" data-category="soil" data-question="how do i monitor crop health">
+          <button class="faqs-question" aria-expanded="false">
+            <span><span class="faqs-num">2.</span> How do I monitor crop health?</span>
+            <svg class="faqs-chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" stroke="#036832" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faqs-answer">
+            <p>Open Crop Monitoring from the main menu to see live health scores, growth stage, and soil condition for each field. Sensors and satellite data feed the dashboard automatically, and you'll get an alert if a field needs attention.</p>
+          </div>
+        </div>
+
+        <div class="faqs-item" data-category="weather" data-question="how does the weather update feature work">
+          <button class="faqs-question" aria-expanded="false">
+            <span><span class="faqs-num">3.</span> How does the weather update feature work?</span>
+            <svg class="faqs-chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" stroke="#036832" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faqs-answer">
+            <p>The Weather page pulls live conditions and short-term forecasts for your exact field location — temperature, humidity, rainfall, and wind — plus alerts for heavy rain, heat waves, or strong winds so you can plan farm activities ahead of time.</p>
+          </div>
+        </div>
+
+        <div class="faqs-item" data-category="irrigation" data-question="what is smart irrigation and how does it help">
+          <button class="faqs-question" aria-expanded="false">
+            <span><span class="faqs-num">4.</span> What is smart irrigation and how does it help?</span>
+            <svg class="faqs-chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" stroke="#036832" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faqs-answer">
+            <p>Smart irrigation uses real-time soil moisture and weather data to schedule watering automatically, so crops get exactly the water they need. It can reduce water usage by up to 40% while improving yield consistency.</p>
+          </div>
+        </div>
+
+        <div class="faqs-item" data-category="technical" data-question="how can i generate and download reports">
+          <button class="faqs-question" aria-expanded="false">
+            <span><span class="faqs-num">5.</span> How can I generate and download reports?</span>
+            <svg class="faqs-chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" stroke="#036832" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faqs-answer">
+            <p>Go to the Report page and choose a category — Crop, Weather, Irrigation, Soil, or Pest &amp; Disease. From there you can download the report as a PDF, Excel, or CSV file in your preferred format.</p>
+          </div>
+        </div>
+
+        <div class="faqs-item" data-category="technical" data-question="can i access the platform on mobile devices">
+          <button class="faqs-question" aria-expanded="false">
+            <span><span class="faqs-num">6.</span> Can I access the platform on mobile devices?</span>
+            <svg class="faqs-chevron" viewBox="0 0 24 24" width="18" height="18"><path d="M6 9l6 6 6-6" stroke="#036832" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faqs-answer">
+            <p>Yes — AgriMonitor is fully responsive and works in any mobile browser, so you can check crop health, weather, and alerts from your phone or tablet without installing anything extra.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="faqs-empty" id="faqsEmpty">
+        <p>No questions found. Try a different search term or category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / SUPPORT ===== -->
+  <section class="faqs-cta">
+    <div class="container faqs-cta-inner">
+      <div class="faqs-cta-copy">
+        <h3>Still have questions?<br><span>We're here to help!</span></h3>
+        <p>Our support team is always ready to assist you.</p>
+      </div>
+
+      <div class="faqs-cta-actions">
+        <a href="contact.html" class="btn btn-solid">Contact Support</a>
+        <div class="faqs-cta-contacts">
+          <a href="tel:+917578390912"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg> +91 75783 90912</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@agrimoniture.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm8 8L5 6v12h14V6l-7 6zm0-2l7-6H5l7 6z"/></svg> info@agrimoniture.com</a>
+        </div>
+      </div>
+
+      <div class="faqs-cta-art" aria-hidden="true">
+        <svg viewBox="0 0 60 70" width="52" height="60">
+          <path d="M30 68V32" stroke="#5a3a2a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M30 40c-16-4-24-18-20-34 16 3 24 16 20 34z" fill="#5fa176"/>
+          <path d="M30 32c15-6 20-19 15-33-15 4-20 17-15 33z" fill="#036832"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#036832"/>
+          <path d="M18 27V17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M18 21c-5-1-8-5-7-10 5 1 8 5 7 10z" fill="#ffffff"/>
+          <path d="M18 17c4-2 6-6 4-11-4 2-6 6-4 11z" fill="#B49D97"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">AgriMonitor</span>
+          <span class="logo-sub">Smart Farming, Better Tomorrow</span>
+        </div>
+      </a>
+      <p>Monitor crops, weather, soil moisture and irrigation in real time. Get smart insights, alerts and recommendations to improve productivity.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook" class="social-icon social-icon--facebook">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#1877F2" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp" class="social-icon social-icon--whatsapp">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#25D366" d="M12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9C23.9 5.3 18.6 0 12 0z"/><path fill="#fff" d="M17.5 15.3c-.3.7-1.5 1.4-2.1 1.4-.5.1-1.2.1-2-.2-.5-.2-1.1-.4-1.9-.7-3.2-1.4-5.3-4.6-5.5-4.8-.2-.2-1.3-1.7-1.3-3.3s.8-2.3 1.1-2.7c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.3.6.9 2.1 1 2.3.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.5-.5.6-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.2.8-.1.2-.3.9-1 1.1-1.4.2-.4.5-.3.8-.2s2 .9 2.3 1.1.6.3.6.5c.1.2.1.9-.2 1.6z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon social-icon--instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18"><defs><radialGradient id="igGrad6" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="15%" stop-color="#fdf497"/><stop offset="35%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#igGrad6)"/><path fill="#fff" d="M12 6.4a5.6 5.6 0 100 11.2 5.6 5.6 0 000-11.2zm0 9.2a3.6 3.6 0 110-7.2 3.6 3.6 0 010 7.2zM18.9 6.2a1.3 1.3 0 11-2.6 0 1.3 1.3 0 012.6 0z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="services.html">Services</a>
+      <a href="crop-monitoring.html">Crop Monitoring</a>
+      <a href="weather.html">Weather Updates</a>
+      <a href="irrigation.html">Smart Irrigation</a>
+      <a href="report.html">Reports &amp; Analytics</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="faqs.html">FAQs</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Our Services</h5>
+      <a href="services.html">Crop Health Monitoring</a>
+      <a href="services.html">Soil Moisture Monitoring</a>
+      <a href="services.html">Weather Forecasting</a>
+      <a href="services.html">Smart Irrigation</a>
+      <a href="services.html">Pest &amp; Disease Detection</a>
+      <a href="services.html">Farm Analytics</a>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h5>Get In Touch</h5>
+      <a class="contact-link" href="tel:+917578390912"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg> +91 75783 90912</a>
+      <a class="contact-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@agrimoniture.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm8 8L5 6v12h14V6l-7 6zm0-2l7-6H5l7 6z"/></svg> info@agrimoniture.com</a>
+      <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Pune,+Maharashtra,+India" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg> Pune, Maharashtra, India</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 AgriMonitor. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="faqs.js"></script>
+</body>
+</html>
